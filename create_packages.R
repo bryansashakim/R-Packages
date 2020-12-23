@@ -2,16 +2,14 @@
 ### CREATE PACKAGES ###
 ### ### ### ### ### ### 
 # taken from Hilary Parkers blog: https://hilaryparker.com
-install.packages("devtools")
 library(devtools)
-devtools::install_github("klutometis/roxygen")
 library(roxygen2)
 
 setwd("/Users/bryankim/Documents/R/Packages") # set as parent directory
-create("stata")
+create("cleanly")
 
 setwd("/Users/bryankim/Documents/R/Packages")
-setwd("./stata")
+setwd("./cleanly")
 document()
 setwd("..")
-install("stata")
+install("cleanly")
